@@ -1,0 +1,501 @@
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(240, 243, 247);
+    margin: 0px;
+    padding: 0px;
+    color: rgb(244, 237, 237);
+   box-sizing: border-box;
+   overflow-x: hidden;
+    
+}
+
+.section1{
+    
+    background-image: url("images/glenn-carstens-peters-P1qyEf1g0HU-unsplash\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-attachment: fixed;
+    background-position: center;
+    margin:0px 0px 0px 0px;
+    padding:0px;
+   
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+.section2{
+
+    background-image: url("images/pramod-tiwari-S1R68gKE61A-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin:20px 0px 20px 0px;
+    padding:0px;
+    justify-content: center;
+    align-items: center;
+    min-width: max-content;
+    min-height: 85vh;
+    display:grid;
+    grid-template-columns: 2fr 3fr;
+}
+.section3{
+    
+    background-image: url("images/pexels-pixabay-414144.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    background-position: center;
+    margin:20px 0px 20px 0px;
+    padding:0px;
+    min-width: max-content;
+    
+    min-height: 85vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#navbar {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 5rem;
+    padding: 0.8rem 0.9rem;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+    z-index: 1;
+    
+}
+
+#navbar ul{
+    display: flex;
+    width: 600px;
+    /* position: absolute; */
+    /* left: 700px; */
+    flex-direction: row;
+    justify-content: flex-end;
+    /* align-items: center; */
+    /* border: 2px solid rgb(28, 26, 26); */
+    padding: 1rem;
+    margin: 0.1rem 5rem;
+    color: #e8e7e5;
+}
+#navbar img{
+    width: 175px;
+    position: relative;
+    left:-20rem;
+    height: 5rem;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+
+#navbar ul li {
+    margin: 1rem 3.5rem;
+    color: #dcdbd9;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar li:hover{
+    color:#9fa8f7;
+
+}
+a{
+    text-decoration: none;
+
+    font-weight: 700;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10rem;
+    font-size: 2rem;
+}
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+    
+}
+.specialname{
+    font-family: "Poppins",sans-serif;
+    color: crimson;
+    font-size: 3.8rem;
+    text-shadow: 2px 2px 1px darkslategrey;
+}
+.button{
+    display: inline-block;
+    padding: 1rem 3rem;
+    border:2px solid white;
+    color:white;
+    background-color: crimson;
+    text-transform: uppercase;
+    font-size: 2rem;
+   
+    letter-spacing: .3rem;
+    margin-top: 3rem;
+    transition: .35s ease-in-out background-color;
+    border-radius: 14% 0%;
+    
+}
+.button:hover{
+    border: 2px solid crimson;
+    color: crimson;
+    background: transparent;
+}
+.intro{
+    position: relative;
+    left:-19.9rem;
+    font-size: 2rem;
+    top:9rem;
+}
+.container1 img{
+    margin: 0px 5rem;
+    background-repeat: no-repeat;
+    background-position: center right;
+    width: 40rem;
+    position: relative;
+    top: 6.2rem;
+    right: -13.7rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1.3rem outset rgb(201 68 68);
+    border-radius: 3.7rem;
+}
+.container2{
+    margin: 0px 5.3rem;
+    font-family: 'Poppins', sans-serif;
+    height: 36.7rem;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 54.4rem;
+    /* FONT-WEIGHT: 100; */
+    padding: 0px 0px;
+    font-size: 2rem;
+    /* flex-basis: fit-content; */
+    /* max-width: fit-content; */
+    /* min-block-size: auto; */
+}
+ p{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.container1{
+    align-self: center;
+    justify-self: end;
+}
+.seperator{
+    height:7rem;
+    min-width: 100vw;
+}
+@media screen and (max-width: 740px) {
+    .section1{
+      width: 146rem;
+      height: 100vh;
+      background-position: top;
+      background-size: 100%;
+      /* background-attachment: fixed; */
+      position: relative;
+      right: -0rem;
+    }
+    .section2{
+      grid-template-columns: 1fr 1.9fr;
+    }
+    #navbar{
+      width:145rem;
+    }
+    .section3{
+      min-width: 145rem;
+      
+    }
+    #footer{
+      min-width: 100vw;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+    
+   
+    
+  }
+  #skills
+  {   
+    background-image: url("images/solid-navy-blue-concrete-textured-wall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin:20px 0px 20px 0px;
+    padding:0px;
+    justify-content: center;
+    align-items: center;
+    min-width: 145rem;
+    min-height: 65vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .box{
+    width:30rem;
+    height:20rem;
+    margin: 4rem;
+    background-color:transparent;
+    border:2px solid rgb(172, 171, 171);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  .box:hover {
+    transform: scale(0.88);
+    cursor: pointer;
+}
+  .box img{
+    
+    height:16 rem;
+    width:26rem;
+  }
+  .container4{
+    flex-direction: row;
+    margin: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .box h2{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  #contact
+  {    
+    background-image: url("images/pexels-tolga-ahmetler-8184179.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin:20px 0px 0px 0px;
+    padding:0px;
+    justify-content: center;
+    align-items: center;
+    min-width: 145rem;
+    min-height: 90vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  
+  .container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .screen {
+    position: relative;
+    background: transparent;
+    border: 1px inset black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    width: 100rem;
+    height: 40rem;
+    box-shadow: 4px 4px 11px #01475c;
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 42px;
+    
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: crimson;
+    font-size: 26px;
+  }
+  
+  
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+    background-color: #9fa8f7;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+    
+  }
+  .app-form-group.buttons button{
+    font-size: 25px;
+    text-shadow: 2px 2px 2px rgb(52 37 37);
+  }
+  
+  .app-form {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: rgb(248 245 245);
+    font-size: 19px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+    font-weight: 900;
+    font-family: 'Poppins';
+  }
+  
+  .app-form::placeholder {
+    color: rgb(244, 235, 235);
+    /* background-color: rgba(61, 59, 67, 0.636); */
+    background-color: transparent;
+    font-family: 'Poppins';
+  }
+  
+  .app-form:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: inset;
+    border-radius: 26% 0%;
+    color: crimson;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    background: center;
+    filter: drop-shadow(2px 1px 10px white);
+  }
+  
+  .app-form-button:hover {
+    color: white;
+  }
+  .screen .screen-body-item.left img{
+    width: 6rem;
+    height: 5rem;
+    margin: 1rem 0rem;
+    filter: brightness(0.7);
+    border-radius: 43px;
+    
+  }
+  .app-title h3{
+    text-align: center;
+    margin: 0px;
+  }
+  placeholder{
+    font-weight: 600;
+  }
+  #footer{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 160rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* background-image: linear-gradient(60deg,#29323c 0%,#485563 40%); */
+    background-color: #1f1e1e;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .social-icon{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .footer.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0rem;
+    font-size: 2rem;
+  }
